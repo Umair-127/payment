@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alam Traders - Payment</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1b5e20, #4caf50);
+}
+
+/* NAVBAR */
+.navbar {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+.brand {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #ffeb3b, #ffc107);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tagline {
+    font-size: 14px;
+    color: #e0e0e0;
+    margin-top: 5px;
+}
+
+/* WRAPPER */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 110px);
+    padding: 20px;
+}
+
+/* PAYMENT CARD */
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    width: 360px;
+    max-width: 95%;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-8px);
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #1b5e20;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* QR Section */
+.qr-box {
+    background: #f1f8e9;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.qr-box img {
+    width: 200px;
+    max-width: 100%;
+    transition: 0.3s;
+}
+
+.qr-box img:hover {
+    transform: scale(1.05);
+}
+
+/* UPI Button */
+.upi-btn {
+    display: block;
+    background: linear-gradient(90deg, #2e7d32, #66bb6a);
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.upi-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Bank Details */
+.bank-details {
+    background: #f1f8e9;
+    padding: 18px;
+    border-radius: 12px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.bank-details h3 {
+    margin-top: 0;
+    color: #2e7d32;
+}
+
+.bank-details p {
+    margin: 6px 0;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="brand">ALAM TRADERS</div>
+    <div class="tagline">Yahan Ka No 1 Krishi Kendra</div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="wrapper">
+    <div class="container">
+
+        <h1>Pay Securely</h1>
+        <p class="subtitle">Choose your preferred payment method</p>
+
+        <!-- QR Section -->
+        <div class="qr-box">
+            <h3>Scan QR</h3>
+            <img src="QR.jpeg" alt="UPI QR Code">
+        </div>
+
+        <!-- UPI Button -->
+        <a class="upi-btn"
+           href="upi://pay?pa=731776484@ibl&pn=Umair%20Khan&cu=INR">
+           Pay via UPI
+        </a>
+        <div>
+            <h3>Mob - 7317764848 , 9956377149</h3>
+        </div>
+
+        <!-- Bank Details -->
+        <div class="bank-details">
+            <h3>Bank Transfer</h3>
+            <p><strong>Account Name:</strong> Umair Khan</p>
+            <p><strong>Account Number:</strong> 1234567890</p>
+            <p><strong>IFSC Code:</strong> ABCD0001234</p>
+            <p><strong>Bank Name:</strong> SBI</p>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
